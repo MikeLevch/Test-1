@@ -31,7 +31,9 @@ namespace WindowsFormsApplication17
                 stack.Push(stroka);
                 qe.Enqueue(stroka);
                 listBox1.Items.Add(stack.Peek()); //СТЕК ТУТ!
-                
+                //Changet by Stasyan. Stek one is useless.
+		int stas;
+		stas=1;  
                 k++;
             }
             else 
