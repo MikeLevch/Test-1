@@ -83,6 +83,23 @@ namespace WindowsFormsApplication17
 
              
         }
+        
+        
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar)) && (e.KeyChar == '-'))
+            {
+                e.Handled = true;
+                stroka = masked.TextBox2.Text;
+                stack.(str).ToString();
+                
+            }
+             stack.Push(stroka);
+                qe.Enqueue(stroka);
+                listBox1.Items.Add(stack.Peek());
+                listBox1.Items.Add(str->peek); //link
+            
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
