@@ -40,10 +40,25 @@ namespace WindowsFormsApplication17
                this.maskedTextBox1.Text = main.strLB; ;
           
             
-               
-       
-           
+        }
+        
+        public string getpassword(string name)
+        {
+            string pasw = null;
 
+            string connectionString = DB3.Properties.Settings.Default.ClinicConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand myCommand = con.CreateCommand();
+            myCommand.CommandText = "SELECT passw FROM autohorize WHERE name LIKE '" + name + "'";
+            SqlDataReader dataReader = myCommand.ExecuteReader();
+            while (dataReader.Read())
+            {
+                pasw = dataReader.GetString(0);
+            }
+            dataReader.Close();
+            con.Close();
+            return pasw;
         }
     }
 }
