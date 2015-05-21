@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ����� ���?
 
 using System;
@@ -54,3 +55,6 @@ namespace ConsoleApplicationTest
         }
     }
 }
+=======
+What code I supposed to code?
+>>>>>>> 18debbc4fec0aa8687f660161b1423f1ef133d01
