@@ -14,7 +14,8 @@ namespace WindowsFormsApplication17
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+           //DJ vasya was here 
+           Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
